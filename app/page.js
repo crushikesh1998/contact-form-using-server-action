@@ -1,4 +1,6 @@
 import ContactForm from "@/components/contact-form";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default  function Home() {
 
@@ -10,6 +12,9 @@ export default  function Home() {
         <p className="text-xl text-gray-600 max-2xl  mx-auto">Contact form mongodb with revalidation</p>
       </div>
       <ContactForm />
+      <Button variant="primary">
+        <Link href="/contact">View List</Link>
+        </Button>
     </div>
     </main>
   );
